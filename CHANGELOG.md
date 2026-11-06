@@ -2,6 +2,66 @@
 
 <!-- version list -->
 
+## v3.1.0 (2026-10-16)
+
+### Chores
+
+- **deps**: Bump cryptography from 49.0.0 to 50.0.2
+  ([#577](https://github.com/sblibs/pySwitchbot/pull/577),
+  [`647e27d`](https://github.com/sblibs/pySwitchbot/commit/647e27d2555821eb074a0a7ede29d80952a9c8ec))
+
+### Documentation
+
+- Document air purifier filter usage reset ([#583](https://github.com/sblibs/pySwitchbot/pull/583),
+  [`1e233ab`](https://github.com/sblibs/pySwitchbot/commit/1e233abc9d7759d81e097414426b648058e35736))
+
+### Features
+
+- **air-purifier**: Add verified filter usage reset
+  ([#583](https://github.com/sblibs/pySwitchbot/pull/583),
+  [`1e233ab`](https://github.com/sblibs/pySwitchbot/commit/1e233abc9d7759d81e097414426b648058e35736))
+
+### Testing
+
+- Cover purifier filter reset verification ([#583](https://github.com/sblibs/pySwitchbot/pull/583),
+  [`1e233ab`](https://github.com/sblibs/pySwitchbot/commit/1e233abc9d7759d81e097414426b648058e35736))
+
+
+## v3.0.0 (2026-10-08)
+
+### Bug Fixes
+
+- Clarify model compatibility and cover cloud parsing
+  ([#579](https://github.com/sblibs/pySwitchbot/pull/579),
+  [`8c39323`](https://github.com/sblibs/pySwitchbot/commit/8c393236b0c5bf7c15b21ea05f439129073fba7e))
+
+### Chores
+
+- **ci**: Bump the github-actions group with 3 updates
+  ([#573](https://github.com/sblibs/pySwitchbot/pull/573),
+  [`c31a5cf`](https://github.com/sblibs/pySwitchbot/commit/c31a5cfcaf408cf16e554e860747c220d291677e))
+
+- **deps**: Bump multidict from 6.7.1 to 6.9.1
+  ([#580](https://github.com/sblibs/pySwitchbot/pull/580),
+  [`2c80055`](https://github.com/sblibs/pySwitchbot/commit/2c800554704ed19a75ce63593b706848adfffb60))
+
+- **pre-commit.ci**: Pre-commit autoupdate ([#578](https://github.com/sblibs/pySwitchbot/pull/578),
+  [`afa332e`](https://github.com/sblibs/pySwitchbot/commit/afa332e33c7afc995c564ae9e8583d7d2bb8bb45))
+
+### Features
+
+- Distinguish SwitchBot product models ([#579](https://github.com/sblibs/pySwitchbot/pull/579),
+  [`8c39323`](https://github.com/sblibs/pySwitchbot/commit/8c393236b0c5bf7c15b21ea05f439129073fba7e))
+
+### Breaking Changes
+
+- Product-specific modelName values replace shared identities for Curtain 3, Meter Plus, Plug Mini
+  US/JP, Ceiling Light Pro, and ordinary Hub Mini. METER_PRO_C and IO_METER now expose the new
+  canonical .name strings. PLUG_MINI remains importable but no longer selects a BLE parser; use
+  PLUG_MINI_US or PLUG_MINI_JP. Coordinate the major release with downstream model mappings and
+  configuration migrations.
+
+
 ## v2.10.0 (2026-09-29)
 
 ### Bug Fixes
